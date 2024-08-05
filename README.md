@@ -42,10 +42,9 @@ For example, you can adapt this for your gh and hf repos:
 git init
 git add -A
 git commit -m "My changes"
-git remote add origin git@github.com:jrosell/ambhmtx.card3d.git
-git remote add gh git@github.com:jrosell/ambhmtx.card3d.git
+git remote add origin git@github.com:jrosell/ambhtmx.card3d.git
+git remote add gh git@github.com:jrosell/ambhtmx.card3d.git
 git remote add hf git@hf.co:spaces/jrosell/ambhtmx.card3d
-git remote set-url --add --push origin git@github.com:jrosell/ambhtmx.card3d.git
 git push --set-upstream gh main
 git push --set-upstream hf main
 ```
@@ -78,3 +77,4 @@ docker build -f Dockerfile  --no-cache --progress=plain -t ambhtmx-card3d-image 
 ```
 
 Check the [known issues](https://github.com/jrosell/ambhtmx/issues), and if you have another issue? Please, [let me know](https://github.com/jrosell/ambhtmx/issues).
+

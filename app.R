@@ -4,8 +4,7 @@ library(ambhtmx)
 
 card_3d_demo <- \() {  
   card <- "card"
-  tryCatch(
-    expr = {
+  tryCatch({
       # Original python code credit: https://fastht.ml/
       # Design credit: https://codepen.io/markmiro/pen/wbqMPa
       bgurl <- "https://ucarecdn.com/35a0e8a7-fcc5-48af-8a3f-70bb96ff5c48/-/preview/750x1000/"
@@ -25,10 +24,8 @@ card_3d_demo <- \() {
   div(card, style = card_styles)
 }
 
-app <- ambhtmx_app(host = "0.0.0.0", port = "7860", protocol ="http")$app
-
-app$get("/", \(req, res) {
-  card_3d_demo() |> send_page(res)
-})
-
-app$start()
+ambhtmx(host = "0.0.0.0", port = "7860", protocol ="http")$app$
+  get("/", \(req, res) {
+    card_3d_demo() |> send_page(res)
+  })$
+  start()
