@@ -58,7 +58,7 @@ bash deploy_docker.sh
 
 Step by step:
 
-1. Building the ambhtmx-image:
+1. Building the image:
 
 ```
 docker build -f Dockerfile -t ambhtmx-card3d-image . && 
@@ -67,7 +67,7 @@ docker build -f Dockerfile -t ambhtmx-card3d-image . &&
 
 2. Check the app on http://127.0.0.1:3000
 
-4. Stoping and removing the ambhtmx-card3d-container:
+4. Stoping and removing the container:
 
 ```
 docker container rm -f ambhtmx-card3d-container

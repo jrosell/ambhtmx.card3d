@@ -25,7 +25,7 @@ card_3d_demo <- \() {
   div(card, style = card_styles)
 }
 
-app <- ambhtmx_app(host = "0.0.0.0", port = "3000", protocol ="http")$app
+app <- ambhtmx_app(host = "0.0.0.0", port = "7860", protocol ="http")$app
 
 app$get("/", \(req, res) {
   card_3d_demo() |> send_page(res)
