@@ -20,7 +20,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 
 ### Hugging Face Spaces
 
-When you push a repository to a Hugging Face Spaces with the option to deploy Dockerfile and include a Dockerfile,  Hugging Face will start building and running your app in the Space.
+When you pushing a repository to a Hugging Face Spaces with the option to deploy Dockerfile and include a Dockerfile, Hugging Face will start building and running your app in the Space.
 
 Try the demo here: 
 
@@ -28,7 +28,7 @@ Try the demo here:
 * Space URL: https://huggingface.co/spaces/jrosell/ambhtmx.card3d
 
 
-If you have this repo with git enabled with hf remote, you can run:
+If you have a repo with git enabled with a github hf remote configured, you can run:
 
 ```
 bash deploy_hf.sh
@@ -65,7 +65,7 @@ docker build -f Dockerfile -t ambhtmx-card3d-image . &&
     docker run -p 7860:7860 --name ambhtmx-card3d-container --rm ambhtmx-card3d-image
 ```
 
-2. Check the app on http://127.0.0.1:3000
+2. Check the app on http://127.0.0.1:7860
 
 4. Stoping and removing the container:
 
