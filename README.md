@@ -24,7 +24,7 @@ When you push a repository to a Hugging Face Spaces with the option to deploy Do
 
 Try the demo here: 
 
-* Direct URL to the deployed app: https://jrosell-ambhtmx-crud.hf.space/
+* Direct URL to the deployed app: https://jrosell-ambhtmx-card3d.hf.space/
 * Space URL: https://huggingface.co/spaces/jrosell/ambhtmx.card3d
 
 
@@ -34,7 +34,19 @@ If you have this repo with git enabled with hf remote, you can run:
 bash deploy_hf.sh
 ```
 
+For example, you can adapt this for your gh and hf repos:
 
+```
+git init
+git add -A
+git commit -m "My changes"
+git remote add origin git@github.com:jrosell/ambhmtx.card3d.git
+git remote add gh git@github.com:jrosell/ambhmtx.card3d.git
+git remote add hf git@hf.co:spaces/jrosell/ambhtmx.card3d
+git remote set-url --add --push origin git@github.com:jrosell/ambhtmx.card3d.git
+git push --set-upstream gh main
+git push --set-upstream hf main
+```
 
 ### Runing the example in Docker
 
