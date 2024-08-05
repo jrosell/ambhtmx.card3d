@@ -28,6 +28,14 @@ Try the demo here:
 * Space URL: https://huggingface.co/spaces/jrosell/ambhtmx.card3d
 
 
+If you have this repo with git enabled with hf remote, you can run:
+
+```
+bash deploy_hf.sh
+```
+
+
+
 ### Runing the example in Docker
 
 All in one:
@@ -67,14 +75,3 @@ docker build -f Dockerfile  --no-cache --progress=plain -t ambhtmx-card3d-image 
 ```
 
 Check the [known issues](https://github.com/jrosell/ambhtmx/issues), and if you have another issue? Please, [let me know](https://github.com/jrosell/ambhtmx/issues).
-
-
-git init
-git add -A
-git branch -M main
-git remote add origin git@github.com:jrosell/ambhtx.card3d.git
-git remote add hg git@hf.co:spaces/jrosell/ambhtmx.card3d
-git remote -v
-git remote set-url --add --push origin git@github.com:jrosell/ambhtmx.card3d.git
-git remote set-url --add --push origin git@hf.co:spaces/jrosell/ambhtmx.card3d
-git push -u origin main
